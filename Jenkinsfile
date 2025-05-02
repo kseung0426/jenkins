@@ -1,5 +1,8 @@
 pipeline {
     agent any 
+    options {
+        timestamps()  // 타임스탬프 옵션 활성화
+    }
     stages {
         stage('CheckOut') { 
             steps {
